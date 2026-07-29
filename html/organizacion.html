@@ -1,0 +1,487 @@
+<div class="organization-page">
+    <section class="organization-structure" id="organigrama">
+        <div class="container">
+            <div class="organization-section__head">
+                <div>
+                    <p class="organization-section__kicker">ORGANIGRAMA ESTRUCTURAL</p>
+                    <h2>Una lectura visual de la estructura corporativa</h2>
+                </div>
+            </div>
+
+<style>
+/* Estilos personalizados para el organigrama */
+.organization-structure {
+  background: #fff !important;
+}
+
+.organization-chart {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.organization-layout {
+  display: grid !important;
+  grid-template-columns: 200px minmax(0, 1fr) !important;
+  gap: 30px !important;
+  align-items: start !important;
+}
+
+.organization-rail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 520px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.organization-rail::before {
+  content: "" !important;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  bottom: 15px;
+  width: 2px;
+  background: #d9dce1;
+  z-index: 1;
+}
+
+.organization-rail__item {
+  position: relative;
+  padding-left: 25px;
+  color: #0d1723;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 2;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.organization-rail__item::before {
+  content: "" !important;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #fff !important;
+  z-index: 3;
+}
+
+.organization-rail__item:nth-child(1)::before { background: #f0b13a !important; }
+.organization-rail__item:nth-child(2)::before { background: #0d1723 !important; }
+.organization-rail__item:nth-child(3)::before { background: #1f57a6 !important; }
+.organization-rail__item:nth-child(4)::before { background: #8e95a0 !important; }
+
+.org-tree {
+  min-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.org-row-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.org-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-height: 64px;
+  width: 260px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border: 1.5px solid #d9dce1;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.org-card-gold { border-color: #f0b13a; }
+.org-card-dark {
+  background: #070d16;
+  border-color: #070d16;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(7, 13, 22, 0.2);
+}
+.org-card-blue { border-color: #1f57a6; }
+.org-card-green { border-color: #5ba353; }
+.org-card-teal { border-color: #2fb0c0; }
+.org-card-violet { border-color: #7b61cc; }
+
+.org-icon {
+  font-size: 1.35rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.org-icon-gold { color: #f0b13a; }
+.org-icon-white { color: #fff; }
+.org-icon-blue { color: #1f57a6; }
+.org-icon-green { color: #5ba353; }
+.org-icon-teal { color: #2fb0c0; }
+.org-icon-violet { color: #7b61cc; }
+
+.org-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.org-code {
+  font-size: 0.72rem;
+  font-weight: 800;
+  opacity: 0.6;
+}
+.org-card-dark .org-code {
+  opacity: 0.8;
+}
+.org-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0d1723;
+}
+.org-card-dark .org-name {
+  color: #fff;
+}
+
+.org-line-vertical {
+  width: 2px;
+  height: 24px;
+  background: #d9dce1;
+}
+.org-line-vertical-short {
+  width: 2px;
+  height: 16px;
+  background: #d9dce1;
+}
+.org-line-vertical-dashed {
+  width: 2px;
+  height: 24px;
+  border-left: 2px dashed #c5c9d0;
+}
+.org-line-vertical-dashed-short {
+  width: 2px;
+  height: 16px;
+  border-left: 2px dashed #c5c9d0;
+}
+
+.org-branch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.org-line-horizontal {
+  width: 75%;
+  height: 2px;
+  background: #d9dce1;
+}
+
+.org-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+
+.org-branch-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org-branch-container-dashed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.org-line-horizontal-dashed {
+  width: 66.6%;
+  height: 0;
+  border-top: 2px dashed #c5c9d0;
+}
+
+.org-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 820px;
+  gap: 20px;
+}
+
+.org-level-5-wrapper {
+  width: 820px;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1199px) {
+  .organization-layout {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .organization-rail {
+    height: auto !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    padding: 10px 0 !important;
+  }
+  .organization-rail::before {
+    display: none !important;
+  }
+  .organization-rail__item {
+    padding-left: 18px !important;
+  }
+}
+</style>
+
+            <div class="organization-layout">
+                <aside class="organization-rail">
+                    <div class="organization-rail__item">Nivel normativo</div>
+                    <div class="organization-rail__item">Nivel ejecutivo</div>
+                    <div class="organization-rail__item">Nivel gerencial</div>
+                    <div class="organization-rail__item">Nivel operativo</div>
+                </aside>
+
+                <div class="organization-chart">
+                    <div class="org-tree">
+                        <!-- Nivel 1 -->
+                        <div class="org-row-center">
+                            <div class="org-card org-card-gold">
+                                <span class="org-icon org-icon-gold"><i class="fa fa-users"></i></span>
+                                <div class="org-text">
+                                    <span class="org-code">01</span>
+                                    <span class="org-name">Asamblea de Socios</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="org-line-vertical"></div>
+
+                        <!-- Nivel 2 -->
+                        <div class="org-row-center">
+                            <div class="org-card org-card-dark">
+                                <span class="org-icon org-icon-white"><i class="fa fa-user"></i></span>
+                                <div class="org-text">
+                                    <span class="org-code">02</span>
+                                    <span class="org-name">Gerencia General</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="org-line-vertical"></div>
+
+                        <!-- Nivel 3 -->
+                        <div class="org-branch-container">
+                            <div class="org-line-horizontal"></div>
+                            <div class="org-grid-4">
+                                <!-- Columna 1 -->
+                                <div class="org-branch-col">
+                                    <div class="org-line-vertical-short"></div>
+                                    <div class="org-card org-card-gold">
+                                        <span class="org-icon org-icon-gold"><i class="fa fa-balance-scale"></i></span>
+                                        <div class="org-text">
+                                            <span class="org-code">02B</span>
+                                            <span class="org-name">Asesoría Legal y de cumplimiento de estándares éticos</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Columna 2 -->
+                                <div class="org-branch-col">
+                                    <div class="org-line-vertical-short"></div>
+                                    <div class="org-card org-card-gold">
+                                        <span class="org-icon org-icon-gold"><i class="fa fa-calculator"></i></span>
+                                        <div class="org-text">
+                                            <span class="org-code">02A</span>
+                                            <span class="org-name">Contabilidad</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Columna 3 -->
+                                <div class="org-branch-col">
+                                    <div class="org-line-vertical-short"></div>
+                                    <div class="org-card org-card-gold">
+                                        <span class="org-icon org-icon-gold"><i class="fa fa-user-tie"></i></span>
+                                        <div class="org-text">
+                                            <span class="org-code">03</span>
+                                            <span class="org-name">Asistente General</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Columna 4 -->
+                                <div class="org-branch-col">
+                                    <div class="org-line-vertical-short"></div>
+                                    <div class="org-card org-card-blue">
+                                        <span class="org-icon org-icon-blue"><i class="fa fa-building"></i></span>
+                                        <div class="org-text">
+                                            <span class="org-code">02C</span>
+                                            <span class="org-name">Gerencia de Operaciones y Desarrollo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="org-line-vertical"></div>
+
+                                    <!-- Nivel 4 -->
+                                    <div class="org-card org-card-blue">
+                                        <span class="org-icon org-icon-blue"><i class="fa fa-user"></i></span>
+                                        <div class="org-text">
+                                            <span class="org-code">04</span>
+                                            <span class="org-name">Gerente de Operaciones</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="org-line-vertical-dashed"></div>
+
+                                    <!-- Nivel 5 (Ramas de Operaciones) -->
+                                    <div class="org-level-5-wrapper">
+                                        <div class="org-line-horizontal-dashed"></div>
+                                        <div class="org-grid-3">
+                                            <!-- Sub-columna 1 -->
+                                            <div class="org-branch-col">
+                                                <div class="org-line-vertical-dashed-short"></div>
+                                                <div class="org-card org-card-green">
+                                                    <span class="org-icon org-icon-green"><i class="fa fa-handshake"></i></span>
+                                                    <div class="org-text">
+                                                        <span class="org-code">2.A</span>
+                                                        <span class="org-name">Proyectos en Negociación</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sub-columna 2 -->
+                                            <div class="org-branch-col">
+                                                <div class="org-line-vertical-dashed-short"></div>
+                                                <div class="org-card org-card-teal">
+                                                    <span class="org-icon org-icon-teal"><i class="fa fa-tools"></i></span>
+                                                    <div class="org-text">
+                                                        <span class="org-code">3.A</span>
+                                                        <span class="org-name">Proyectos en Desarrollo</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sub-columna 3 -->
+                                            <div class="org-branch-col">
+                                                <div class="org-line-vertical-dashed-short"></div>
+                                                <div class="org-card org-card-violet">
+                                                    <span class="org-icon org-icon-violet"><i class="fa fa-cogs"></i></span>
+                                                    <div class="org-text">
+                                                        <span class="org-code">4.A</span>
+                                                        <span class="org-name">Proyectos en Ejecución</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="organization-bottom-grid">
+                <div class="organization-bottom-card">
+                    <p class="organization-section__kicker">NIVELES ORGANIZACIONALES</p>
+                    <div class="organization-levels">
+                        <div><span>👥</span><strong>Nivel Normativo</strong><p>Define lineamientos y politicas generales.</p></div>
+                        <div><span>🧭</span><strong>Nivel Ejecutivo</strong><p>Dirige y controla la gestion institucional.</p></div>
+                        <div><span>⚙️</span><strong>Nivel Gerencial</strong><p>Gestiona y coordina las areas estrategicas.</p></div>
+                        <div><span>📦</span><strong>Nivel Operativo</strong><p>Ejecuta y da soporte a procesos de la empresa.</p></div>
+                    </div>
+                </div>
+                <div class="organization-bottom-card">
+                    <p class="organization-section__kicker">DOCUMENTOS RELACIONADOS</p>
+                    <ul class="organization-docs">
+                        <li>Manual de Organizacion y Funciones (MOF)</li>
+                        <li>Reglamento Interno de Trabajo</li>
+                        <li>Codigo de Etica y Conducta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="organization-areas" id="areas">
+        <div class="container">
+            <div class="organization-section__head organization-section__head--light">
+                <div>
+                    <p class="organization-section__kicker">AREAS DE LA EMPRESA</p>
+                    <h2>Funciones principales que mantienen el ritmo operativo</h2>
+                </div>
+            </div>
+            <div class="organization-areas__grid">
+                <article class="organization-area-card">
+                    <span>💼</span>
+                    <h3>Administracion</h3>
+                    <p>Control interno, soporte documental y seguimiento de procesos.</p>
+                </article>
+                <article class="organization-area-card">
+                    <span>📊</span>
+                    <h3>Finanzas</h3>
+                    <p>Planificacion, control presupuestario y analisis de resultados.</p>
+                </article>
+                <article class="organization-area-card">
+                    <span>🧠</span>
+                    <h3>Estrategia</h3>
+                    <p>Desarrollo de negocios, alianzas y oportunidades de crecimiento.</p>
+                </article>
+                <article class="organization-area-card">
+                    <span>🛠️</span>
+                    <h3>Operaciones</h3>
+                    <p>Coordinacion de proyectos, ejecucion y control de calidad.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="organization-model" id="modelo">
+        <div class="container">
+            <div class="organization-model__grid">
+                <article class="organization-model__card organization-model__card--dark">
+                    <p class="organization-section__kicker">MODELO DE NEGOCIO</p>
+                    <h2>Un sistema integrado de consultoria, gestion y desarrollo</h2>
+                    <p>Partimos de la deteccion de oportunidades, estructuramos la propuesta de valor, armamos equipos especializados y acompañamos la ejecucion hasta la entrega de resultados.</p>
+                </article>
+                <article class="organization-model__card">
+                    <p class="organization-section__kicker">ENTREGABLES</p>
+                    <ul>
+                        <li>Diagnostico y analisis de situacion</li>
+                        <li>Plan estrategico y plan de accion</li>
+                        <li>Estructura de gobierno y responsabilidades</li>
+                        <li>Seguimiento de indicadores y resultados</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>

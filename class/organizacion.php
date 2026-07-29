@@ -1,5 +1,5 @@
 <?php
-class quienessomos
+class organizacion
 {
 	var $parameter = array();
 	function SetParameter($name, $value)
@@ -9,37 +9,32 @@ class quienessomos
 	function mostrarCabeceraMenu()
 	{
 		$template = new template;
-		$template->SetTemplate('html/cabecera_somos.html');
+		$template->SetTemplate('html/cabecera_organizacion.html');
 		return $template->Display();
 	}
 	function mostrarCabeceraPrincipal()
 	{
 		$template = new template;
-		$template->SetTemplate('html/cabecera_principal.html');
+		$template->SetTemplate('html/cabecera_principal_organizacion.html');
 		return $template->Display();
 	}
 	function mostrarPiePagina()
 	{
 		$template = new template;
 		$template->SetTemplate('html/pie_pagina.html');
-		// $template->SetParameter('menu', "Factura Electronica");
 		return $template->Display();
 	}
-
 	function mostrarContenido()
 	{
 		$template = new template;
-		// $template->SetTemplate('html/form_facturacion.html');
-		// $template->SetTemplate('html/detalle_facturas.html');
-		$template->SetTemplate('html/somos.html');
+		$template->SetTemplate('html/organizacion.html');
 		return $template->Display();
 	}
-	
 	function Display()
 	{
 		$template = new template;
 		$template->SetTemplate('html/template.html');
-		$template->SetParameter('pagina', "Quienes Somos");
+		$template->SetParameter('pagina', 'Organización');
 		$template->SetParameter('cabecera_menu', $this->mostrarCabeceraMenu());
 		$template->SetParameter('cabecera_principal', $this->mostrarCabeceraPrincipal());
 		$template->SetParameter('pie_pagina', $this->mostrarPiePagina());
@@ -47,3 +42,4 @@ class quienessomos
 		return $template->Display();
 	}
 }
+?>

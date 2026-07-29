@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" href="tkn.png" />
 <link rel="shortcut icon" href="tkn.png" />
 <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-<meta name="description" content="Agrikon HTML Template For Agriculture Farm & Farmers" />
+        <meta name="description" content="TKN S.R.L. - Consultoría, ingeniería y gestión de proyectos con presencia regional." />
 
 <!-- fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="assets/css/organik.css" />
 </head>
 
-<body>
+<body class="home-page">
 
     <div class="preloader">
         <img class="preloader__image" width="200" src="logo.png" alt="" />
@@ -49,254 +49,283 @@
             <!-- /.main-menu -->
         </header><!-- /.main-header -->
 
-        <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content">
-                <div class="main-menu__language">
-                    <label class="sr-only" for="language-select-sticky" data-translate="select_language">Seleccionar idioma</label>
-                    <select class="selectpicker" id="language-select-sticky">
-                        <option value="es">Español</option>
-                        <option value="en">English</option>
-                    </select>
-                </div><!-- /.main-menu__language -->
-            </div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
 
-
-        <section class="main-slider">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{
-    "slidesPerView": 1,
-    "loop": true,
-    "effect": "fade",
-    "autoplay": {
-        "delay": 5000
-    },
-    "navigation": {
-        "nextEl": "#main-slider__swiper-button-next",
-        "prevEl": "#main-slider__swiper-button-prev"
-    }
-    }'>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(imagen2.png);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 text-center">
-                                    <h2><span data-translate="main_title">TKN</span> <br>
-                                        <span data-translate="main_subtitle">Texto de ejemplo</span></h2>
-
-                                    <!-- /.thm-btn dynamic-radius -->
-                                </div><!-- /.col-lg-7 text-right -->
-                            </div><!-- /.row -->
-                        </div><!-- /.container -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(edificio.jpg.jpeg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 text-center">
-                                    <h2><span>Texto de ejemplo</span> <br>
-                                        Texto de ejemplo</h2>
-                                    <!-- /.thm-btn dynamic-radius -->
-                                </div><!-- /.col-lg-7 text-right -->
-                            </div><!-- /.row -->
-                        </div><!-- /.container -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(logo.png);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 text-center">
-                                    <h2><span data-translate="protege_tu">Protege tu</span> <br>
-                                        <span data-translate="seguridad_confianza">Seguridad y Confianza</span></h2>
-                                    <!-- /.thm-btn dynamic-radius -->
-                                </div><!-- /.col-lg-7 text-right -->
-                            </div><!-- /.row -->
-                        </div><!-- /.container -->
-                    </div><!-- /.swiper-slide -->
-                </div><!-- /.swiper-wrapper -->
-
-                <!-- If we need navigation buttons -->
-                <div class="main-slider__nav">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
-                            class="organik-icon-left-arrow"></i>
-                    </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i
-                            class="organik-icon-right-arrow"></i></div>
-                </div><!-- /.main-slider__nav -->
-
-            </div><!-- /.swiper-container thm-swiper__slider -->
-        </section><!-- /.main-slider -->
-
-        <section class="feature-box">
+        <section class="home-hero" id="inicio">
             <div class="container">
-                <div class="inner-container wow fadeInUp" data-wow-duration="1500ms">
-                    <div class="thm-tiny__slider" id="contact-infos-box" data-tiny-options='{
-            "container": "#contact-infos-box",
-            "items": 1,
-            "slideBy": "page",
-            "gutter": 0,
-            "mouseDrag": true,
-            "autoplay": true,
-            "nav": false,
-            "controlsPosition": "bottom",
-            "controlsText": ["<i class=\"fa fa-angle-left\"></i>", "<i class=\"fa fa-angle-right\"></i>"],
-            "autoplayButtonOutput": false,
-            "responsive": {
-                "640": {
-                  "items": 2,
-                  "gutter": 30
-                },
-                "992": {
-                  "gutter": 30,
-                  "items": 3
-                },
-                "1200": {
-                  "disable": true
-                }
-              }
-        }'>
-                        <div>
-                            <div class="feature-box__single">
-                                <i class="organik-icon-global-shipping feature-box__icon"></i>
-                                <div class="feature-box__content">
-                                    <h3 data-translate="productos_garantizados">Productos Garantizados</h3>
-                                    <p data-translate="protege_dinero">Protege tu dinero</p>
-                                </div><!-- /.feature-box__content -->
-                            </div><!-- /.feature-box__single -->
+                <div class="home-hero__grid">
+                    <div class="home-hero__content wow fadeInUp" data-wow-duration="1200ms">
+                        <p class="home-kicker">TKN S.R.L.</p>
+                        <h1>Soluciones globales para el desarrollo empresarial en un futuro lleno de retos</h1>
+                        <p class="home-hero__lead">Interacción y complementariedad con empresas y profesionales para generar valor, ejecutar proyectos y sostener decisiones con criterio técnico.</p>
+                        <div class="home-hero__actions">
+                            <a href="#servicios" class="thm-btn home-btn">Nuestros servicios</a>
+                            <a href="#proyectos" class="thm-btn home-btn home-btn--ghost">Ver proyectos</a>
                         </div>
-                        <div>
-                            <div class="feature-box__single">
-                                <i class="organik-icon-online-store feature-box__icon"></i>
-                                <div class="feature-box__content">
-                                    <h3 data-translate="oficinas_cercanas">Oficinas cercanas</h3>
-                                    <p data-translate="busca_oficina">Busca tu oficina mas cerca</p>
-                                </div><!-- /.feature-box__content -->
-                            </div><!-- /.feature-box__single -->
+                        <div class="home-hero__chips">
+                            <span>Consultoría</span>
+                            <span>Ingeniería</span>
+                            <span>Gestión de proyectos</span>
                         </div>
                     </div>
-                </div><!-- /.inner-container -->
-            </div><!-- /.container -->
-        </section><!-- /.feature-box -->
 
-        <section class="offer-banner">
+                    <div class="home-hero__visual wow fadeInRight" data-wow-duration="1200ms">
+                        <div class="home-hero__panel home-hero__panel--primary" style="background-image: linear-gradient(180deg, rgba(13, 23, 35, 0.28), rgba(13, 23, 35, 0.7)), url('reunion.jpg'); background-position: center center;">
+                            <div class="home-hero__panel-badge">Análisis estratégico</div>
+                            <div class="home-hero__panel-chart">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="home-hero__panel home-hero__panel--secondary">
+                            <div>
+                                <strong>+50</strong>
+                                <span>proyectos ejecutados con enfoque integral</span>
+                            </div>
+                            <div>
+                                <strong>+6</strong>
+                                <span>países con presencia y alianzas activas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-stats">
             <div class="container">
-                <div class="block-title ">
-                    <div class="block-title__decor"></div><!-- /.block-title__decor -->
-                    <h3 data-translate="seccion_productos">Seccion de productos</h3>
-                </div><!-- /.block-title -->
+                <div class="home-stats__grid wow fadeInUp" data-wow-duration="1200ms">
+                    <article class="home-stat">
+                        <span class="home-stat__value">+50</span>
+                        <span class="home-stat__label">Proyectos</span>
+                        <p>Ejecutados con enfoque técnico y comercial.</p>
+                    </article>
+                    <article class="home-stat">
+                        <span class="home-stat__value">+20</span>
+                        <span class="home-stat__label">Interacciones</span>
+                        <p>Nacionales e internacionales con aliados estratégicos.</p>
+                    </article>
+                    <article class="home-stat">
+                        <span class="home-stat__value">+6</span>
+                        <span class="home-stat__label">Países</span>
+                        <p>Presencia regional y operaciones coordinadas.</p>
+                    </article>
+                    <article class="home-stat">
+                        <span class="home-stat__value">360°</span>
+                        <span class="home-stat__label">Ingeniería</span>
+                        <p>Soluciones multidisciplinarias integrales.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="row">
-                    <div class="flip-box col-md-6 " >
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front offer-banner__box"  style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.48) 100%), url(carretera1.jpg);">
-                            <h2 class="h2left" data-translate="producto_1">Producto 1</h2>
-                            
-                          </div>
-                          <div class="flip-box-back">
-                            <h2 class="h2center" data-translate="producto_1">Producto 1</h2>
-                                                        <p class="product-card-copy" data-translate="producto_1_desc">Planificacion y consultoria para apertura y mejoramiento de caminos rurales.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flip-box col-md-6">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front offer-banner__box" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.48) 100%), url(carretera2.jpg);">
-                            <h2 class="h2rigth" data-translate="producto_2">Producto 2</h2>
-                          </div>
-                          <div class="flip-box-back">
-                            <h2 class="h2center" data-translate="producto_2">Producto 2</h2>
-                                                        <p class="product-card-copy" data-translate="producto_2_desc">Diagnostico tecnico de vias con propuestas para seguridad, drenaje y durabilidad.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flip-box col-md-6">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front offer-banner__box"  style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.48) 100%), url(carretera3.jpg);">
-                            <h2 class="h2rigth" data-translate="producto_3">Producto 3</h2>
-                            
-                          </div>
-                          <div class="flip-box-back">
-                            <h2 class="h2center" data-translate="producto_3">Producto 3</h2>
-                                                        <p class="product-card-copy" data-translate="producto_3_desc">Supervision de obra en campo con control de calidad y cumplimiento de plazos.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flip-box col-md-6">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front offer-banner__box" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.48) 100%), url(carretera4.jpg);">
-                            <h2 class="h2left" data-translate="producto_4">Producto 4</h2>
-                          </div>
-                          <div class="flip-box-back">
-                            <h2 class="h2center" data-translate="producto_4">Producto 4</h2>
-                                                        <p class="product-card-copy" data-translate="producto_4_desc">Asesoria para mantenimiento preventivo y correctivo de corredores viales.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flip-box col-md-6">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front offer-banner__box" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.48) 100%), url(carretera5.jpeg);">
-                            <h2 class="h2rigth" data-translate="producto_5">Producto 5</h2>
-                          </div>
-                          <div class="flip-box-back">
-                            <h2 class="h2center" data-translate="producto_5">Producto 5</h2>
-                                                        <p class="product-card-copy" data-translate="producto_5_desc">Gestion integral de proyectos de caminos para municipios, empresas y comunidades.</p>
-                          </div>
-                        </div>
-                      </div>
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.offer-banner -->
-
-        <section class="call-to-action">
-            <img src="assets/images/shapes/call-shape-1.png" alt="" class="call-to-action__shape-1">
-            <img src="assets/images/shapes/call-shape-2.png" alt="" class="call-to-action__shape-2 wow fadeInLeft"
-                data-wow-duration="1500ms">
-            <h2 class="floated-text">Technic</h2><!-- /.floated-text -->
+        <section class="home-about" id="nosotros">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-xl-6 clearfix">
-                        <img src="oficinas.jpg" class="call-to-action__image" alt="">
-                    </div><!-- /.col-md-12 col-lg-12 col-xl-12 -->
-                    <div class="col-md-12 col-lg-12 col-xl-6 clearfix">
-                        <div class="call-to-action__content">
-                            <div class="block-title text-left">
-                                <div class="block-title__decor"
-                                    style="background-image: url(assets/images/shapes/leaf-2-1.png);"></div>
-                                <!-- /.block-title__decor -->
-                                <p data-translate="main_title">Nosotros </p>
-                                <h3 data-translate="main_title">TKN S.R.L. </h3>
-                            </div><!-- /.block-title -->
-                            <p data-translate="espacio_publicitar">TKN S.R.L. nació a finales de 2022 en La Paz, Bolivia, bajo el respaldo internacional de RED SHIELD Enterprises &amp; Busines SAC. Inspirados por la fuerza y el poder del fuego, nos establecemos como un operador estratégico capaz de integrar capital, especialidad técnica y visión de negocio. Con presencia en La Paz y Cochabamba, nuestra misión es transformar desafíos complejos en casos de éxito mediante una gestión liderada por expertos en operaciones y gerencia general.</p>
-                            <div class="call-to-action__wrap">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6">
-                                        <div class="call-to-action__box">
-                                            
-                                            <h3 data-translate="profesionales_capacitados">Profesionales
-                                                Capacitados</h3>
-                                        </div><!-- /.call-to-action__box -->
-                                    </div><!-- /.col-md-6 -->
-                                    <div class="col-md-6">
-                                        <div class="call-to-action__box">
-                                            
-                                            <h3 data-translate="soluciones_eficientes">Soluciones
-                                                Eficientes</h3>
-                                        </div><!-- /.call-to-action__box -->
-                                    </div><!-- /.col-md-6 -->
-                                </div><!-- /.row -->
-                            </div><!-- /.call-to-action__wrap -->
-                            <a href="productos.php" class="thm-btn" data-translate="ver_productos">ver Productos</a><!-- /.thm-btn -->
-                        </div><!-- /.call-to-action__content -->
-                    </div><!-- /.col-md-12 col-lg-12 col-xl-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.call-to-action -->
+                <div class="home-split">
+                    <div class="home-split__media wow fadeInLeft" data-wow-duration="1200ms">
+                        <div class="home-placeholder" style="background-image: linear-gradient(180deg, rgba(13, 23, 35, 0.18), rgba(13, 23, 35, 0.55)), url('reunionlaboral.jpg'); background-position: center center;">
+                        </div>
+                    </div>
+                    <div class="home-split__content wow fadeInRight" data-wow-duration="1200ms">
+                        <p class="home-section-kicker">Nosotros</p>
+                        <h2>Líderes en consultoría, organización e ingeniería</h2>
+                        <p>TKN S.R.L. es una empresa enfocada en integrar estrategia, operación y ejecución para proyectos de alto impacto. Nuestra visión combina experiencia técnica con una lectura clara del negocio para convertir retos complejos en resultados sostenibles.</p>
+                        <div class="home-pillars">
+                            <div class="home-pillar">
+                                <strong>Profesionales</strong>
+                                <span>Capacidades especializadas para cada etapa del proyecto.</span>
+                            </div>
+                            <div class="home-pillar">
+                                <strong>Soluciones</strong>
+                                <span>Eficiencia operativa con foco en valor y continuidad.</span>
+                            </div>
+                        </div>
+                        <a href="quienessomos.php" class="thm-btn home-btn">Conozca más sobre TKN</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-services" id="servicios">
+            <div class="container">
+                <div class="home-section-heading wow fadeInUp" data-wow-duration="1200ms">
+                    <p class="home-section-kicker">Nuestros servicios</p>
+                    <h2>Servicios diseñados para acompañar decisión, diseño y ejecución</h2>
+                </div>
+                <div class="home-service-grid">
+                    <article class="home-card wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-card__icon">01</div>
+                        <h3>Consultoría</h3>
+                        <p>Estudios técnicos, económicos y estratégicos para orientar decisiones y priorizar inversiones.</p>
+                    </article>
+                    <article class="home-card wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-card__icon">02</div>
+                        <h3>Ingeniería</h3>
+                        <p>Desarrollo conceptual, básico y de detalle con enfoque multidisciplinario.</p>
+                    </article>
+                    <article class="home-card wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-card__icon">03</div>
+                        <h3>Gestión de proyectos</h3>
+                        <p>Planificación, control y ejecución bajo estándares de calidad y seguimiento ejecutivo.</p>
+                    </article>
+                    <article class="home-card wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-card__icon">04</div>
+                        <h3>Inversiones</h3>
+                        <p>Identificación de oportunidades, estructuración y análisis para proyectos con retorno sostenible.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-sectors" id="sectores">
+            <div class="container">
+                <div class="home-section-heading home-section-heading--light wow fadeInUp" data-wow-duration="1200ms">
+                    <p class="home-section-kicker">Sectores</p>
+                    <h2>Operamos donde el proyecto exige criterio, control y visión de largo plazo</h2>
+                </div>
+                <div class="home-sector-grid">
+                    <article class="home-sector" style="background-image: url('mineria.jpg');">
+                        <span>Minería</span>
+                    </article>
+                    <article class="home-sector" style="background-image: url('litio.jpg');">
+                        <span>Litio</span>
+                    </article>
+                    <article class="home-sector" style="background-image: url('petroleoygas.jpeg');">
+                        <span>Petróleo y gas</span>
+                    </article>
+                    <article class="home-sector" style="background-image: url('energia.jpg');">
+                        <span>Energía</span>
+                    </article>
+                    <article class="home-sector" style="background-image: url('infraestructura.jpg');">
+                        <span>Infraestructura</span>
+                    </article>
+                    <article class="home-sector" style="background-image: url('medioambiente.jpg');">
+                        <span>Medio ambiente</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-projects" id="proyectos">
+            <div class="container">
+                <div class="home-projects__header wow fadeInUp" data-wow-duration="1200ms">
+                    <div>
+                        <p class="home-section-kicker">Proyectos destacados</p>
+                        <h2>Casos que muestran alcance, método y resultado</h2>
+                    </div>
+                    <a href="productos.php" class="thm-btn home-btn">Ver todos los proyectos</a>
+                </div>
+                <div class="home-project-grid">
+                    <article class="home-project wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-project__media" style="background-image: url('reunion.jpg');"></div>
+                        <div class="home-project__body">
+                            <h3>Planta de beneficio Katanani</h3>
+                            <p>La Paz, Bolivia</p>
+                            <span>Ingeniería y gestión</span>
+                        </div>
+                    </article>
+                    <article class="home-project wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-project__media" style="background-image: url('reunionlaboral.jpg');"></div>
+                        <div class="home-project__body">
+                            <h3>Desarrollo integral de litio</h3>
+                            <p>Potosí, Bolivia</p>
+                            <span>Consultoría</span>
+                        </div>
+                    </article>
+                    <article class="home-project wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="home-project__media" style="background-image: url('');"></div>
+                        <div class="home-project__body">
+                            <h3>Infraestructura energética</h3>
+                            <p>Latinoamérica</p>
+                            <span>Ingeniería</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-global" id="presencia">
+            <div class="container">
+                <div class="home-global__grid">
+                    <div class="home-global__content wow fadeInLeft" data-wow-duration="1200ms">
+                        <p class="home-section-kicker">Presencia internacional</p>
+                        <h2>Operamos con alianzas y oficinas asociadas en distintos países</h2>
+                        <p>La estructura de trabajo de TKN permite coordinar equipos, validar oportunidades y ejecutar soluciones con alcance regional.</p>
+                    </div>
+                    <div class="home-global__map wow fadeInRight" data-wow-duration="1200ms">
+                        <div class="home-global__map-surface" style="background-image: linear-gradient(180deg, rgba(13, 23, 35, 0.15), rgba(13, 23, 35, 0.62)), url('mapamundial.jpg');">
+                            <span class="home-pin home-pin--mx">México</span>
+                            <span class="home-pin home-pin--pe">Perú</span>
+                            <span class="home-pin home-pin--br">Brasil</span>
+                            <span class="home-pin home-pin--es">España</span>
+                            <span class="home-pin home-pin--ea">EAU</span>
+                            <div class="home-global__badge">
+                                <span class="home-global__badge-icon">◎</span>
+                                <span class="home-global__badge-text">PRESENCIA INTERNACIONAL<br>EN + 6 PAISES</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-partners" id="alianzas">
+            <div class="container">
+                <div class="home-section-heading wow fadeInUp" data-wow-duration="1200ms">
+                    <p class="home-section-kicker">Empresas asociadas</p>
+                    <h2>Red de aliados para ejecutar proyectos con escala</h2>
+                </div>
+                <div class="home-partners__grid">
+                    <div class="home-partner">ACI Systems</div>
+                    <div class="home-partner">K-UTEC</div>
+                    <div class="home-partner">ITECO</div>
+                    <div class="home-partner">Red Shield</div>
+                    <div class="home-partner">EPC</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-method" id="metodologia">
+            <div class="container">
+                <div class="home-method__box wow fadeInUp" data-wow-duration="1200ms">
+                    <div class="home-method__icon">
+                        <img src="metodologia.jpg" alt="" />
+                    </div>
+                    <div class="home-method__content">
+                        <p class="home-section-kicker">Metodología</p>
+                        <h2>Una búsqueda estructurada de socios, capacidades y oportunidades</h2>
+                        <p>Evaluamos necesidades, conectamos aliados estratégicos y ordenamos procesos para generar valor y relaciones sostenibles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-contact" id="contacto">
+            <div class="container">
+                <div class="home-contact__grid">
+                    <div class="home-contact__copy wow fadeInLeft" data-wow-duration="1200ms">
+                        <p class="home-section-kicker">Hablemos de su próximo proyecto</p>
+                        <h2>Estamos listos para estructurar una solución a medida.</h2>
+                        <p>Si el proyecto requiere mirada técnica, coordinación y seguimiento ejecutivo, podemos empezar por una conversación concreta.</p>
+                        <ul class="home-contact__list">
+                            <li>La Paz y Cochabamba</li>
+                            <li>gustavo.dick@tkn-global.com</li>
+                            <li>+591 4 4596621</li>
+                        </ul>
+                    </div>
+                    <form class="home-contact__form wow fadeInRight" data-wow-duration="1200ms" action="#">
+                        <div class="home-contact__field-row">
+                            <input type="text" name="nombre" placeholder="Nombre">
+                            <input type="email" name="correo" placeholder="Correo electrónico">
+                        </div>
+                        <input type="text" name="asunto" placeholder="Asunto">
+                        <textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="thm-btn home-btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -392,4 +421,4 @@
     <script src="assets/js/translations.js"></script>
 </body>
 
-</html> -->
+</html>
