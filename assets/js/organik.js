@@ -144,11 +144,16 @@
   }
 
   function dynamicCurrentMenuClass(selector) {
-    let FileName = window.location.href.split("/").reverse()[0];
+    // get current page file name (no query or hash)
+    let FileName = window.location.href.split("/").reverse()[0] || "";
+    FileName = FileName.split('?')[0].split('#')[0];
 
     selector.find("li").each(function () {
       let anchor = $(this).find("a");
-      if ($(anchor).attr("href") == FileName) {
+      let href = $(anchor).attr("href") || "";
+      href = href.split('?')[0].split('#')[0];
+      // If href equals filename or pathname ends with href, mark current
+      if (href && FileName && (href === FileName || window.location.pathname.endsWith(href))) {
         $(this).addClass("current");
       }
     });
@@ -169,6 +174,28 @@
     let mainNavUL = $(".main-menu__list");
     dynamicCurrentMenuClass(mainNavUL);
   }
+
+  // Extra robust marking on window load to handle resolved hrefs and edge cases
+  $(window).on('load', function(){
+    try{
+      var currentPath = window.location.pathname.replace(/\/+$|^\//g, '');
+      var currentFile = currentPath.split('/').pop();
+      $('.main-menu__list li').removeClass('current');
+      $('.main-menu__list a').each(function(){
+        var href = $(this).attr('href');
+        if(!href) return;
+        // Resolve relative URLs
+        var resolved = new URL(href, window.location.href);
+        var anchorPath = resolved.pathname.replace(/\/+$|^\//g, '');
+        var anchorFile = anchorPath.split('/').pop();
+        if(resolved.href === window.location.href || anchorPath === currentPath || (currentFile && anchorFile === currentFile)){
+          $(this).closest('li').addClass('current');
+        }
+      });
+    }catch(e){
+      // ignore
+    }
+  });
 
   if ($(".main-menu").length && $(".mobile-nav__container").length) {
     let navContent = document.querySelector(".main-menu").innerHTML;
@@ -210,6 +237,18 @@
       $("body").toggleClass("locked");
     });
   }
+
+  // Delay navigation to modelos.php by 1s and show preloader for nicer transition
+  $(document).on('click', 'a[href$="modelos.php"]', function(e){
+    var href = $(this).attr('href');
+    // Only intercept same-origin links
+    if (!href) return;
+    e.preventDefault();
+    if ($('.preloader').length) {
+      $('.preloader').fadeIn(200);
+    }
+    setTimeout(function(){ window.location.href = href; }, 1000);
+  });
 
   if ($(".search-toggler").length) {
     $(".search-toggler").on("click", function (e) {

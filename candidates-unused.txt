@@ -1,0 +1,17 @@
+﻿C:\xampp\htdocs\TKN-plantilla\.htaccess
+C:\xampp\htdocs\TKN-plantilla\contactos.php
+C:\xampp\htdocs\TKN-plantilla\DEMO_TRADUCCIONES.html
+C:\xampp\htdocs\TKN-plantilla\index.php
+C:\xampp\htdocs\TKN-plantilla\modelos.php
+C:\xampp\htdocs\TKN-plantilla\organizacion.php
+C:\xampp\htdocs\TKN-plantilla\productos.php
+C:\xampp\htdocs\TKN-plantilla\quienessomos.php
+C:\xampp\htdocs\TKN-plantilla\version.php
+C:\xampp\htdocs\TKN-plantilla\assets\.DS_Store
+C:\xampp\htdocs\TKN-plantilla\assets\css\.DS_Store
+C:\xampp\htdocs\TKN-plantilla\assets\css\organik.css
+C:\xampp\htdocs\TKN-plantilla\assets\fonts\fa-brands-400.eot
+C:\xampp\htdocs\TKN-plantilla\assets\fonts\fa-brands-400.svg
+C:\xampp\htdocs\TKN-plantilla\assets\fonts\fa-brands-400.ttf
+C:\xampp\htdocs\TKN-plantilla\assets\fonts\fa-brands-400.woff
+C:\xampp\htdocs\TKN-plantilla\assets\fonts\fa-brands-400.woff2

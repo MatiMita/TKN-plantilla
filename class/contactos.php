@@ -13,6 +13,15 @@ class contactos
 		$template->SetParameter('menu', "Contactenos");
 		return $template->Display();
 	}
+
+	function mostrarCabeceraMenuSinLetras()
+	{
+		$template = new template;
+		$template->SetTemplate('html/cabecera_menu_noletters.html');
+		$template->SetParameter('menu', "Contactenos");
+		$template->SetParameter('subtitle', "Ponte en contacto con nosotros");
+		return $template->Display();
+	}
 	function mostrarCabeceraPrincipal()
 	{
 		$template = new template;
@@ -38,7 +47,7 @@ class contactos
 		$template = new template;
 		$template->SetTemplate('html/template.html');
 		$template->SetParameter('pagina', "Contactos");
-		$template->SetParameter('cabecera_menu', $this->mostrarCabeceraMenu());
+		$template->SetParameter('cabecera_menu', $this->mostrarCabeceraMenuSinLetras());
 		$template->SetParameter('cabecera_principal', $this->mostrarCabeceraPrincipal());
 		$template->SetParameter('pie_pagina', $this->mostrarPiePagina());
 		$template->SetParameter('contenido', $this->mostrarContenido());

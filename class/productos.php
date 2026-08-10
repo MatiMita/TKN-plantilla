@@ -13,6 +13,15 @@ class productos
 		$template->SetParameter('menu', "Productos");
 		return $template->Display();
 	}
+
+	function mostrarCabeceraMenuSinLetras()
+	{
+		$template = new template;
+		$template->SetTemplate('html/cabecera_menu_noletters.html');
+		$template->SetParameter('menu', "Productos");
+		$template->SetParameter('subtitle', "Servicios y soluciones ofrecidas");
+		return $template->Display();
+	}
 	function mostrarCabeceraPrincipal()
 	{
 		$template = new template;
@@ -41,7 +50,7 @@ class productos
 		$template = new template;
 		$template->SetTemplate('html/template.html');
 		$template->SetParameter('pagina', "Productos");
-		$template->SetParameter('cabecera_menu', $this->mostrarCabeceraMenu());
+		$template->SetParameter('cabecera_menu', $this->mostrarCabeceraMenuSinLetras());
 		$template->SetParameter('cabecera_principal', $this->mostrarCabeceraPrincipal());
 		$template->SetParameter('pie_pagina', $this->mostrarPiePagina());
 		$template->SetParameter('contenido', $this->mostrarContenido());

@@ -2,7 +2,7 @@
     <div class="container site-nav__container">
         <div class="main-logo">
             <a href="index.php" class="logo" aria-label="Inicio">
-                <img src="tkn.png" width="110" alt="TKN">
+                <img src="assets/images/organizadas/tkn.png" width="110" alt="TKN">
             </a>
             <div class="mobile-nav__buttons">
                 <span class="fa fa-bars mobile-nav__toggler" aria-label="Abrir menu"></span>
@@ -19,8 +19,11 @@
             <li>
                 <a href="productos.php" data-translate="productos">Servicios</a>
             </li>
-            <li class="dropdown current">
+            <li class="dropdown">
                 <a href="organizacion.php">Organización</a>
+            </li>
+            <li>
+                <a href="modelos.php">Modelos</a>
             </li>
             <li>
                 <a href="contactos.php" data-translate="contactos">Contacto</a>
@@ -30,3 +33,35 @@
         <a href="contactos.php" class="site-nav__cta thm-btn">Contactar <i class="fa fa-arrow-right"></i></a>
     </div><!-- /.container -->
 </nav>
+<div class="header-bg-right" aria-hidden="true"></div>
+<style>
+    .main-header { position: relative; }
+    .main-header .header-bg-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 36%;
+        max-width: 440px;
+        height: 100%;
+        max-height: 120px;
+        background-image: url('assets/images/organizadas/fondoorganizacion.png');
+        background-size: cover;
+        background-position: center right;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.95;
+    }
+    .main-header { z-index: 2; }
+    .page-wrapper > header .main-logo,
+    .page-wrapper > header .main-menu__list,
+    .page-wrapper > header .site-nav__cta { position: relative; z-index: 3; }
+    .main-header .header-bg-right::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to left, rgba(13,23,35,0.65) 0%, rgba(13,23,35,0.12) 60%, rgba(13,23,35,0) 100%);
+        z-index: 1;
+        pointer-events: none;
+    }
+    @media (max-width: 992px) { .main-header .header-bg-right { display: none; } }
+</style>
