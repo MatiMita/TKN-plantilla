@@ -6,7 +6,7 @@ $translations = [
         // Navegación
         'inicio' => 'Inicio',
         'quienes_somos' => 'Quienes Somos',
-        'productos' => 'Productos',
+        'productos' => 'Servicios',
         'contactos' => 'Contactos',
         'email' => 'Email',
         'phone' => 'Teléfono',

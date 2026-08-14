@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/organik.css" />
+    <link rel="stylesheet" href="assets/css/organik.css?v=3" />
 </head>
 
 <body class="home-page">
 
     <div class="preloader">
-        <img class="preloader__image" width="200" src="assets/images/organizadas/logo.png" alt="" />
+        <img class="preloader__image" width="200" src="assets/images/organizadas/logofinal.png" alt="" />
     </div>
 
     <div class="page-wrapper">
@@ -32,7 +32,7 @@
         ?>
 
         <section class="modelos-hero">
-            <div class="modelos-hero__bg" style="background-image: url('assets/images/organizadas/modelonegocio.jpg');"></div>
+            <div class="modelos-hero__bg" style="background-image: url('assets/images/organizadas/modelocorregido.png');"></div>
         </section>
 
                 <style>
@@ -44,7 +44,7 @@
             <!-- Aquí puedes añadir contenido adicional debajo del hero si lo deseas -->
         </main>
 
-        <footer class="site-footer background-black-2">
+        <footer class="site-footer footer-white">
             <?php include 'html/pie_pagina.html'; ?>
         </footer>
     </div>

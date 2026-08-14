@@ -470,13 +470,21 @@
   // window scroll event
 
   $(window).on("scroll", function () {
-    if ($(".stricked-menu").length) {
+    if ($(".stricky-header").length) {
       var headerScrollPos = 130;
-      var stricky = $(".stricked-menu");
+      var stricky = $(".stricky-header");
       if ($(window).scrollTop() > headerScrollPos) {
         stricky.addClass("stricky-fixed");
       } else if ($(this).scrollTop() <= headerScrollPos) {
         stricky.removeClass("stricky-fixed");
+      }
+    }
+    // Sticky header shadow
+    if ($(".main-header").length) {
+      if ($(window).scrollTop() > 10) {
+        $(".main-header").addClass("is-scrolled");
+      } else {
+        $(".main-header").removeClass("is-scrolled");
       }
     }
     if ($(".scroll-to-top").length) {

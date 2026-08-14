@@ -10,7 +10,7 @@ class productos
 	{
 		$template = new template;
 		$template->SetTemplate('html/cabecera_menu.html');
-		$template->SetParameter('menu', "Productos");
+		$template->SetParameter('menu', "Servicios");
 		return $template->Display();
 	}
 
@@ -18,7 +18,7 @@ class productos
 	{
 		$template = new template;
 		$template->SetTemplate('html/cabecera_menu_noletters.html');
-		$template->SetParameter('menu', "Productos");
+		$template->SetParameter('menu', "Servicios");
 		$template->SetParameter('subtitle', "Servicios y soluciones ofrecidas");
 		return $template->Display();
 	}
@@ -49,7 +49,7 @@ class productos
 	{
 		$template = new template;
 		$template->SetTemplate('html/template.html');
-		$template->SetParameter('pagina', "Productos");
+		$template->SetParameter('pagina', "Servicios");
 		$template->SetParameter('cabecera_menu', $this->mostrarCabeceraMenuSinLetras());
 		$template->SetParameter('cabecera_principal', $this->mostrarCabeceraPrincipal());
 		$template->SetParameter('pie_pagina', $this->mostrarPiePagina());
