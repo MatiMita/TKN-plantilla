@@ -1289,7 +1289,7 @@
 :root {
   --thm-font: "Rubik", sans-serif;
   --heading-font: "Rubik", sans-serif;
-  --special-font: "Abril Fatface", cursive;
+  --special-font: "Rubik", sans-serif;
   --thm-color: #505050;
   --thm-color-rgb: 80, 80, 80;
   --thm-base: #ffcb05;
@@ -2643,7 +2643,7 @@ h6 {
 #page-title,
 #breadcrumb-title,
 .page-header .container h2 * {
-  font-family: "Abril Fatface", cursive !important;
+  font-family: "Rubik", sans-serif !important;
   font-size: 64px !important;
   color: #fff !important;
   font-weight: 400 !important;
@@ -4128,7 +4128,7 @@ h6 {
   right: 150px;
   font-size: 80px;
   color: #fff;
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Rubik", sans-serif;
   opacity: 0.14;
 }
 
@@ -4299,7 +4299,7 @@ h6 {
 }
 
 .call-to-action-two__image .floated-text {
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Rubik", sans-serif;
   display: none;
   position: absolute;
   font-size: 80px;
@@ -8305,7 +8305,7 @@ h6 {
 
 /* Style the back side */
 .flip-box-back {
-  background-color: #383A39;
+  background: linear-gradient(135deg, #b8941f 0%, #d4a824 25%, #2d3e4f 60%, #1a2744 100%);
   color: white;
   transform: rotateY(180deg);
 }
@@ -9704,8 +9704,10 @@ body {
   display: grid;
   gap: 12px;
   align-content: start;
-  padding: 14px 10px 0;
+  padding: 24px 20px;
   text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
 }
 
 .about-meaning__item span {
@@ -9715,6 +9717,7 @@ body {
   line-height: 1;
   display: block;
   text-align: center;
+  padding-right: 20px;
 }
 
 .about-meaning__item h3,
