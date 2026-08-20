@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/organik.css?v=3" />
+    <link rel="stylesheet" href="assets/css/organik.css?v=6" />
 </head>
 
 <body class="home-page">

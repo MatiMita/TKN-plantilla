@@ -2406,19 +2406,19 @@ h6 {
   padding-bottom: 22px;
 }
 
+nav.site-nav,
 .site-nav {
   position: relative;
   z-index: 999;
-  background: linear-gradient(180deg, rgba(180, 140, 40, 0.82), rgba(140, 100, 20, 0.78));
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(12px);
+  background: #0d1723 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
 }
 
 .site-nav .site-nav__container {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
@@ -2453,42 +2453,55 @@ h6 {
 }
 
 .site-nav .main-menu__list>li+li {
-  margin-left: 34px;
+  margin-left: 40px;
 }
 
 .site-nav .main-menu__list>li>a {
-  color: #fff;
+  color: #fff !important;
   font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
 }
 
-.site-nav .main-menu__list>li.current>a,
+.site-nav .main-menu__list>li.current>a {
+  color: #fff;
+  border-bottom-color: #d6a13a;
+}
+
 .site-nav .main-menu__list>li:hover>a {
   color: #fff;
+  border-bottom-color: rgba(214, 161, 58, 0.45);
 }
 
 .site-nav__cta {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 18px;
-  border-radius: 2px;
+  padding: 12px 24px;
+  border-radius: 4px;
   background: #d6a13a;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: none;
   box-shadow: none;
   white-space: nowrap;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
 }
 
 .site-nav__cta:hover {
   color: #fff;
-  background: #f0bd55;
+  background: #c4912e;
 }
 
 .site-nav__cta i {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .site-nav .main-menu__login,
@@ -2552,15 +2565,10 @@ h6 {
   }
 }
 
-/* Custom: smaller header for modelos view */
-.site-nav .site-nav__container {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
+/* Custom: consistent header sizing */
 .main-menu__two .main-logo {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .main-menu__two .main-menu__list>li {
