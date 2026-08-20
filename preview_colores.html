@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Colores Nuevos - TKN Plantilla</title>
+    <style>
+        :root {
+            --thm-font: "Rubik", sans-serif;
+            --heading-font: "Rubik", sans-serif;
+            --special-font: "Abril Fatface", cursive;
+            
+            /* COLORES NUEVOS */
+            --thm-color: #505050;
+            --thm-color-rgb: 80, 80, 80;
+            --thm-base: #F4BE00;           /* Dorado/Amarillo */
+            --thm-base-rgb: 244, 190, 0;
+            --thm-primary: #123B49;        /* Azul Oscuro */
+            --thm-primary-rgb: 18, 59, 73;
+            --thm-secondary: #0B2633;      /* Azul más oscuro */
+            --thm-secondary-rgb: 11, 38, 51;
+            --thm-special: #2a2a2a;
+            --thm-special-rgb: 42, 42, 42;
+            --thm-black: #123B49;          /* Azul Oscuro */
+            --thm-black-rgb: 18, 59, 73;
+            --thm-black2: #0B2633;
+            --thm-black2-rgb: 11, 38, 51;
+            --thm-text-dark: #F2F2F2;      /* Fondo interno/Gris claro */
+            --thm-text-dark-rgb: 242, 242, 242;
+        }
+
+        body {
+            font-family: var(--thm-font);
+            color: var(--thm-color);
+            font-size: 16px;
+            line-height: 2.125;
+            font-weight: 300;
+            margin: 0;
+            padding: 20px;
+            background-color: #F2F2F2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--thm-primary);
+            font-family: var(--heading-font);
+            margin-top: 30px;
+        }
+
+        .color-box {
+            display: inline-block;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .color-dorado {
+            background-color: #F4BE00;
+        }
+
+        .color-azul {
+            background-color: #123B49;
+        }
+
+        .color-gris {
+            background-color: #F2F2F2;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #F2F2F2;
+            border-left: 4px solid var(--thm-primary);
+        }
+
+        .btn-primary {
+            background-color: var(--thm-primary);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .btn-secondary {
+            background-color: var(--thm-base);
+            color: #333;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .header {
+            background-color: var(--thm-primary);
+            color: white;
+            padding: 30px;
+            margin: -40px -40px 30px -40px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .accent-text {
+            color: var(--thm-base);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--thm-base);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vista Previa - Nuevos Colores</h1>
+            <p>Esta es una vista previa de cómo se vería tu página con los colores nuevos</p>
+        </div>
+
+        <h2>Paleta de Colores</h2>
+        <div>
+            <div class="color-box color-dorado">#F4BE00<br>Dorado/Amarillo</div>
+            <div class="color-box color-azul">#123B49<br>Azul Oscuro</div>
+            <div class="color-box color-gris">#F2F2F2<br>Gris Claro (Fondo)</div>
+        </div>
+
+        <h2>Ejemplos de Uso</h2>
+
+        <div class="section">
+            <h3>Textos y Enlaces</h3>
+            <p>Texto normal con <span class="accent-text">texto destacado en dorado</span></p>
+            <p>Este es un <a href="#">enlace en dorado</a></p>
+        </div>
+
+        <div class="section">
+            <h3>Botones</h3>
+            <button class="btn-primary">Botón Primario (Azul)</button>
+            <button class="btn-secondary">Botón Secundario (Dorado)</button>
+        </div>
+
+        <div class="section">
+            <h3>Secciones</h3>
+            <p>Las secciones tienen el borde izquierdo en azul oscuro (#123B49)</p>
+            <p>El fondo de página es gris claro (#F2F2F2)</p>
+        </div>
+
+        <div style="background-color: var(--thm-primary); color: white; padding: 20px; margin-top: 30px; border-radius: 5px;">
+            <h3 style="color: white; margin-top: 0;">Fondo en Color Primario (Azul)</h3>
+            <p>Este es un ejemplo de sección con fondo azul oscuro</p>
+        </div>
+
+        <div style="background-color: var(--thm-base); color: #333; padding: 20px; margin-top: 20px; border-radius: 5px;">
+            <h3 style="color: #333; margin-top: 0;">Fondo en Color Dorado</h3>
+            <p>Este es un ejemplo de sección con fondo dorado</p>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid var(--thm-primary);">
+
+        <h2>¿Qué cambios se harían?</h2>
+        <ul>
+            <li><strong>Color principal (#F4BE00):</strong> Será usado en botones, enlaces, y elementos destacados</li>
+            <li><strong>Color oscuro (#123B49):</strong> Será usado en encabezados, navegación y elementos oscuros</li>
+            <li><strong>Fondo (#F2F2F2):</strong> Será el fondo gris claro del sitio</li>
+        </ul>
+
+        <p style="background-color: #fffacd; padding: 15px; border-radius: 5px; margin-top: 30px;">
+            <strong>✓ ¿Te gusta cómo se ve?</strong> Si es así, puedo aplicar estos cambios al archivo organik.css
+        </p>
+    </div>
+</body>
+</html>
