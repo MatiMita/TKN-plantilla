@@ -20,17 +20,30 @@
                 <a href="productos.php" data-translate="productos">Servicios</a>
             </li>
             <li class="current">
-                <a href="organizacion.php">Organización</a>
+                <a href="organizacion.php" data-translate="organizacion">Organización</a>
             </li>
             <li>
-                <a href="modelos.php">Modelos</a>
+                <a href="modelos.php" data-translate="modelos">Modelos</a>
             </li>
             <li>
                 <a href="contactos.php" data-translate="contactos">Contacto</a>
             </li>
         </ul>
 
-        <a href="contactos.php" class="site-nav__cta thm-btn">Contactar <i class="fa fa-arrow-right"></i></a>
+        <div class="site-nav__actions">
+            <div class="lang-switcher" id="lang-switcher" aria-label="Selector de idioma">
+                <button class="lang-btn" id="lang-btn-es" data-language="es" aria-label="Español" title="Español">
+                    <span class="lang-flag">🇧🇴</span>
+                    <span class="lang-code">ES</span>
+                </button>
+                <div class="lang-divider"></div>
+                <button class="lang-btn" id="lang-btn-en" data-language="en" aria-label="English" title="English">
+                    <span class="lang-flag">🇺🇸</span>
+                    <span class="lang-code">EN</span>
+                </button>
+            </div>
+            <a href="contactos.php" class="site-nav__cta thm-btn" data-translate="contactar_btn">Contactar <i class="fa fa-arrow-right"></i></a>
+        </div>
     </div><!-- /.container -->
 </nav>
 <div class="header-bg-right" aria-hidden="true"></div>
@@ -54,6 +67,7 @@
     .main-header { z-index: 2; }
     .page-wrapper > header .main-logo,
     .page-wrapper > header .main-menu__list,
+    .page-wrapper > header .site-nav__actions,
     .page-wrapper > header .site-nav__cta { position: relative; z-index: 3; }
     .main-header .header-bg-right::after {
         content: "";

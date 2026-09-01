@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/organik.css?v=6" />
+    <link rel="stylesheet" href="assets/css/organik.css?v=7" />
 </head>
 
 <body>
@@ -87,16 +87,17 @@
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
-                <div class="mobile-nav__language">
-                    <label class="sr-only" for="language-select" data-translate="select_language">Seleccionar idioma</label>
-                    <select class="selectpicker" id="language-select">
-                        <option value="es">Español</option>
-                        <option value="en">English</option>
-                    </select>
-                </div><!-- /.mobile-nav__language -->
-                <div class="main-menu__login">
-                    <a href="#"><i class="organik-icon-user"></i>Login / Register</a>
-                </div><!-- /.main-menu__login -->
+                <div class="lang-switcher lang-switcher--mobile" aria-label="Selector de idioma" style="justify-content:center; margin: 12px auto; width: fit-content;">
+                    <button class="lang-btn" data-language="es" aria-label="Español" title="Español">
+                        <span class="lang-flag">🇧🇴</span>
+                        <span class="lang-code">ES</span>
+                    </button>
+                    <div class="lang-divider"></div>
+                    <button class="lang-btn" data-language="en" aria-label="English" title="English">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span class="lang-code">EN</span>
+                    </button>
+                </div>
             </div><!-- /.mobile-nav__top -->
 
 

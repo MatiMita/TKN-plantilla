@@ -10828,3 +10828,145 @@ body {
   background: #ffffff;
   /* Asegura que no sea transparente al bajar */
 }
+
+/* ─────────────────────────────────────────────────────────────
+   # Language Switcher  (ES / EN toggle)
+───────────────────────────────────────────────────────────── */
+.site-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  padding: 3px;
+  backdrop-filter: blur(6px);
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+/* When nav is scrolled / on white bg */
+.main-header.sticky-header .lang-switcher,
+.main-header.is-scrolled .lang-switcher {
+  background: rgba(13, 23, 35, 0.06);
+  border-color: rgba(13, 23, 35, 0.14);
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border: none;
+  background: transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, color 0.2s ease;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  transform: scale(1.04);
+}
+
+.lang-btn--active,
+.lang-switcher .lang-btn--active,
+.lang-btn[aria-pressed="true"] {
+  background: #f0b13a !important;
+  color: #0d1723 !important;
+  box-shadow: 0 2px 8px rgba(240, 177, 58, 0.40) !important;
+  font-weight: 900 !important;
+}
+
+.lang-btn--active:hover,
+.lang-btn[aria-pressed="true"]:hover {
+  background: #f5c350 !important;
+  color: #0d1723 !important;
+  transform: none;
+}
+
+/* On white / scrolled header: dark text for non-active */
+.main-header.sticky-header .lang-btn,
+.main-header.is-scrolled .lang-btn {
+  color: rgba(13, 23, 35, 0.6);
+}
+
+.main-header.sticky-header .lang-btn:hover,
+.main-header.is-scrolled .lang-btn:hover {
+  background: rgba(13, 23, 35, 0.08);
+  color: #0d1723;
+}
+
+.lang-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.lang-code {
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.lang-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 0 1px;
+  flex-shrink: 0;
+}
+
+.main-header.sticky-header .lang-divider,
+.main-header.is-scrolled .lang-divider {
+  background: rgba(13, 23, 35, 0.15);
+}
+
+/* Responsive: hide lang code text on very small screens */
+@media (max-width: 480px) {
+  .lang-code {
+    display: none;
+  }
+  .lang-btn {
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .site-nav__actions {
+    display: none; /* se muestra en menú móvil si se desea */
+  }
+}
+
+/* Lang switcher inside mobile nav */
+.lang-switcher--mobile {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-switcher--mobile .lang-btn {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 7px 16px;
+  font-size: 0.8rem;
+}
+
+.lang-switcher--mobile .lang-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.lang-switcher--mobile .lang-divider {
+  background: rgba(255, 255, 255, 0.25);
+}
+
