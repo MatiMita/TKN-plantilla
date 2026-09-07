@@ -134,11 +134,11 @@ const translations = {
         'somos_hito_actual_label': 'Actualidad',
         'somos_significacion_kicker': 'SIGNIFICACION PRACTICA DE TKN',
         'somos_significacion_lead': 'El nombre TKN nace de la combinación de tres conceptos fundamentales que representan nuestra esencia y compromiso',
-        'somos_t_title': '(TRUST) Confianza',
+        'somos_t_title': '(TRUST)<br>Confianza',
         'somos_t_desc': 'Construimos relaciones sólidas basadas en la confianza y la integridad.',
-        'somos_k_title': '(KNOWLEDGE) Conocimiento',
+        'somos_k_title': '(KNOWLEDGE)<br>Conocimiento',
         'somos_k_desc': 'Transformamos el conocimiento en soluciones innovadoras y de alto valor.',
-        'somos_n_title': '(NETWORK) Red',
+        'somos_n_title': '(NETWORK)<br>Red',
         'somos_n_desc': 'Conectamos personas, empresas, oportunidades y mercados para generar impacto.',
         'somos_mision_h3': 'MISIÓN',
         'somos_mision_p1': 'Brindar servicios de consultoría y asesoría estratégica que permitan a nuestros clientes tomar decisiones con confianza, reducir riesgos y alcanzar sus objetivos mediante soluciones integrales, innovadoras y personalizadas.',
@@ -202,6 +202,12 @@ const translations = {
         'somos_hero_h1': 'Transformamos conocimiento en oportunidades',
         'somos_hero_h3': 'Consultoría estratégica, ingeniería y desarrollo con identidad propia.',
         'somos_hero_p': 'TKN S.R.L. identifica y brinda asesoramiento estratégico y soluciones integrales que impulsan el crecimiento, la eficiencia y la sostenibilidad de organizaciones en Bolivia y el mundo.',
+
+        // ── Cabecera Modelos (hero) ───────────────────────────
+        'modelos_hero_kicker': 'MODELOS',
+        'modelos_hero_h1': 'Modelo de negocio y propuesta de valor',
+        'modelos_hero_h3': 'Estructuras claras para decisiones estratégicas con impacto real.',
+        'modelos_hero_p': 'TKN S.R.L. diseña y presenta modelos de negocio adaptados a cada contexto, integrando análisis de mercado, gestión global y estructuras corporativas que impulsan el crecimiento sostenible en Bolivia y el mundo.',
 
         // ── Organización ──────────────────────────────────────
         'org_hero_kicker': 'ORGANIZACIÓN CORPORATIVA',
@@ -394,11 +400,11 @@ const translations = {
         'somos_hito_actual_label': 'Present',
         'somos_significacion_kicker': 'PRACTICAL MEANING OF TKN',
         'somos_significacion_lead': 'The name TKN is born from the combination of three fundamental concepts that represent our essence and commitment',
-        'somos_t_title': '(TRUST) Trust',
+        'somos_t_title': '(TRUST)<br>Trust',
         'somos_t_desc': 'We build solid relationships based on trust and integrity.',
-        'somos_k_title': '(KNOWLEDGE) Knowledge',
+        'somos_k_title': '(KNOWLEDGE)<br>Knowledge',
         'somos_k_desc': 'We transform knowledge into innovative, high-value solutions.',
-        'somos_n_title': '(NETWORK) Network',
+        'somos_n_title': '(NETWORK)<br>Network',
         'somos_n_desc': 'We connect people, companies, opportunities and markets to generate impact.',
         'somos_mision_h3': 'MISSION',
         'somos_mision_p1': 'To provide consulting and strategic advisory services that enable our clients to make decisions with confidence, reduce risks and achieve their goals through comprehensive, innovative and personalized solutions.',
@@ -462,6 +468,12 @@ const translations = {
         'somos_hero_h1': 'We transform knowledge into opportunities',
         'somos_hero_h3': 'Strategic consulting, engineering and development with its own identity.',
         'somos_hero_p': 'TKN S.R.L. identifies and provides strategic advisory and comprehensive solutions that drive growth, efficiency and sustainability of organizations in Bolivia and worldwide.',
+
+        // ── Modelos hero ──────────────────────────────────────
+        'modelos_hero_kicker': 'MODELS',
+        'modelos_hero_h1': 'Business model and value proposition',
+        'modelos_hero_h3': 'Clear structures for strategic decisions with real impact.',
+        'modelos_hero_p': 'TKN S.R.L. designs and presents business models adapted to each context, integrating market analysis, global management and corporate structures that drive sustainable growth in Bolivia and worldwide.',
 
         // ── Organization ──────────────────────────────────────
         'org_hero_kicker': 'CORPORATE ORGANIZATION',

@@ -1,10 +1,86 @@
-<section class="page-header">
+<section class="modelos-page-hero">
     <div class="container">
-        <h2><span id="page-title">Modelos</span></h2>
-        <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="index.php" data-translate="inicio">Inicio</a></li>
-            <li>/</li>
-            <li><span id="breadcrumb-title">Modelos</span></li>
-        </ul><!-- /.thm-breadcrumb list-unstyled -->
-    </div><!-- /.container -->
-</section><!-- /.page-header -->
+        <div class="modelos-page-hero__copy">
+            <p class="modelos-page-hero__kicker" data-translate="modelos_hero_kicker">MODELOS</p>
+            <h1 data-translate="modelos_hero_h1">Modelo de negocio y propuesta de valor</h1>
+            <h3 data-translate="modelos_hero_h3">Estructuras claras para decisiones estratégicas con impacto real.</h3>
+            <p data-translate="modelos_hero_p">TKN S.R.L. diseña y presenta modelos de negocio adaptados a cada contexto, integrando análisis de mercado, gestión global y estructuras corporativas que impulsan el crecimiento sostenible en Bolivia y el mundo.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+.modelos-page-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 80px;
+    background:
+        linear-gradient(180deg, rgba(8, 17, 29, 0.80) 0%, rgba(15, 29, 45, 0.90) 100%),
+        url('assets/images/organizadas/modelos.jpg') center center / cover no-repeat;
+    color: #fff;
+}
+
+.modelos-page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 72% 40%, rgba(255, 153, 0, 0.25), transparent 20%),
+        radial-gradient(circle at 88% 60%, rgba(255, 184, 54, 0.18), transparent 15%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.modelos-page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.modelos-page-hero__copy {
+    max-width: 680px;
+}
+
+.modelos-page-hero__kicker {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 16px;
+}
+
+.modelos-page-hero__copy h1 {
+    font-size: clamp(2.8rem, 6.5vw, 6rem);
+    font-weight: 800;
+    line-height: 0.93;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 28px;
+    letter-spacing: -0.01em;
+}
+
+.modelos-page-hero__copy h3 {
+    font-size: clamp(1rem, 1.8vw, 1.35rem);
+    font-weight: 700;
+    color: #f0b13a;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.modelos-page-hero__copy p {
+    font-size: clamp(0.88rem, 1.2vw, 1.05rem);
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 580px;
+}
+
+@media (max-width: 768px) {
+    .modelos-page-hero {
+        padding: 80px 0 60px;
+    }
+    .modelos-page-hero__copy h1 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+}
+</style>

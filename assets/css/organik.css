@@ -8879,8 +8879,17 @@ body {
 .home-stat p,
 .home-pillar span,
 .home-card p {
-  color: rgba(19, 32, 45, 0.78);
+  color: rgba(19, 32, 45, 0.88);
   line-height: 1.7;
+}
+
+.home-split__content p {
+  text-align: justify;
+}
+
+.home-card p {
+  color: rgba(19, 32, 45, 0.88);
+  text-align: left;
 }
 
 .home-hero__lead {
@@ -9299,13 +9308,14 @@ body {
 
 .page-header .container h2 {
   margin: 0 !important;
-  line-height: 0.98 !important;
+  line-height: 0.92 !important;
   font-family: var(--heading-font) !important;
-  font-size: clamp(3rem, 6vw, 5.4rem) !important;
+  font-size: clamp(4rem, 10vw, 9rem) !important;
   text-transform: uppercase !important;
   color: #fff !important;
-  max-width: 12ch !important;
-  font-weight: 700 !important;
+  max-width: 14ch !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
 }
 
 .page-header .page-subtitle {
@@ -9341,7 +9351,7 @@ body {
   }
 
   .page-header .container h2 {
-    font-size: 32px !important;
+    font-size: clamp(3rem, 14vw, 4.5rem) !important;
     max-width: 24ch !important;
   }
 }
@@ -9678,7 +9688,9 @@ body {
   position: relative;
   overflow: hidden;
   padding: 56px 0 40px;
-  background: linear-gradient(180deg, #08111d 0%, #0f1d2d 100%);
+  background:
+    linear-gradient(180deg, rgba(8, 17, 29, 0.82) 0%, rgba(15, 29, 45, 0.88) 100%),
+    url('../../assets/images/organizadas/nosotros.jpg') center center / cover no-repeat;
   color: #fff;
 }
 
@@ -9714,8 +9726,8 @@ body {
   margin: 0 0 14px;
   color: #f0b13a;
   letter-spacing: 0.22em;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -9740,6 +9752,8 @@ body {
   margin: 22px 0 0;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about-story,
@@ -9802,17 +9816,29 @@ body {
   color: #f0b13a;
 }
 
-.about-story__copy p,
 .about-meaning__lead,
 .about-pillars__card p,
 .about-value-card p,
-.about-choice__content li,
-.about-choice__content p,
-.about-team p,
 .about-method-step p,
 .about-sectors-panel strong {
   color: rgba(17, 28, 44, 0.8);
   line-height: 1.7;
+}
+
+.about-choice__content li,
+.about-choice__content p,
+.about-team p {
+  color: rgba(17, 28, 44, 0.92);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Paneles laterales: texto más oscuro y justificado */
+.about-story__copy p {
+  color: rgba(17, 28, 44, 0.95);
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about-emblem {
@@ -9898,6 +9924,10 @@ body {
 
 .about-timeline__item p {
   margin: 0;
+  color: rgba(17, 28, 44, 0.95);
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about-meaning__card {
@@ -9913,6 +9943,7 @@ body {
 .about-meaning__lead {
   max-width: 780px;
   margin: 0 auto 18px;
+  color: rgba(17, 28, 44, 0.82);
 }
 
 .about-meaning__grid {
@@ -9926,19 +9957,27 @@ body {
   gap: 12px;
   align-content: start;
   padding: 24px 20px;
-  text-align: left;
+  text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 8px;
 }
 
-.about-meaning__item span {
+.about-meaning__item > span {
   font-size: 3.2rem;
   font-weight: 900;
   color: #f0b13a;
   line-height: 1;
   display: block;
   text-align: center;
-  padding-right: 20px;
+  padding-right: 0;
+}
+
+.about-meaning__item p {
+  color: rgba(17, 28, 44, 0.90);
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
+  margin: 0;
 }
 
 .about-meaning__item h3,
@@ -10863,12 +10902,12 @@ body {
   align-items: center;
   gap: 5px;
   padding: 5px 11px;
-  border: none;
-  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.10);
   border-radius: 999px;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease, color 0.2s ease;
-  color: rgba(255, 255, 255, 0.75);
+  transition: background 0.2s ease, transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
+  color: rgba(255, 255, 255, 0.90);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -10877,7 +10916,8 @@ body {
 }
 
 .lang-btn:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.55);
   color: #fff;
   transform: scale(1.04);
 }
@@ -10886,14 +10926,16 @@ body {
 .lang-switcher .lang-btn--active,
 .lang-btn[aria-pressed="true"] {
   background: #f0b13a !important;
+  border-color: #f0b13a !important;
   color: #0d1723 !important;
-  box-shadow: 0 2px 8px rgba(240, 177, 58, 0.40) !important;
+  box-shadow: 0 2px 8px rgba(240, 177, 58, 0.45) !important;
   font-weight: 900 !important;
 }
 
 .lang-btn--active:hover,
 .lang-btn[aria-pressed="true"]:hover {
   background: #f5c350 !important;
+  border-color: #f5c350 !important;
   color: #0d1723 !important;
   transform: none;
 }
@@ -10901,13 +10943,37 @@ body {
 /* On white / scrolled header: dark text for non-active */
 .main-header.sticky-header .lang-btn,
 .main-header.is-scrolled .lang-btn {
-  color: rgba(13, 23, 35, 0.6);
+  color: rgba(13, 23, 35, 0.75);
+  background: rgba(13, 23, 35, 0.06);
+  border: 1.5px solid rgba(13, 23, 35, 0.20);
 }
 
 .main-header.sticky-header .lang-btn:hover,
 .main-header.is-scrolled .lang-btn:hover {
-  background: rgba(13, 23, 35, 0.08);
+  background: rgba(13, 23, 35, 0.12);
+  border-color: rgba(13, 23, 35, 0.35);
   color: #0d1723;
+}
+
+/* Mantener amarillo en botón activo cuando el header está scrolleado */
+.main-header.sticky-header .lang-btn--active,
+.main-header.sticky-header .lang-btn[aria-pressed="true"],
+.main-header.is-scrolled .lang-btn--active,
+.main-header.is-scrolled .lang-btn[aria-pressed="true"] {
+  background: #f0b13a !important;
+  border-color: #f0b13a !important;
+  color: #0d1723 !important;
+  box-shadow: 0 2px 8px rgba(240, 177, 58, 0.45) !important;
+  font-weight: 900 !important;
+}
+
+.main-header.sticky-header .lang-btn--active:hover,
+.main-header.sticky-header .lang-btn[aria-pressed="true"]:hover,
+.main-header.is-scrolled .lang-btn--active:hover,
+.main-header.is-scrolled .lang-btn[aria-pressed="true"]:hover {
+  background: #f5c350 !important;
+  border-color: #f5c350 !important;
+  color: #0d1723 !important;
 }
 
 .lang-flag {
@@ -10956,13 +11022,16 @@ body {
 }
 
 .lang-switcher--mobile .lang-btn {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.10);
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
   padding: 7px 16px;
   font-size: 0.8rem;
 }
 
 .lang-switcher--mobile .lang-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.20);
+  border-color: rgba(255, 255, 255, 0.50);
   color: #fff;
 }
 

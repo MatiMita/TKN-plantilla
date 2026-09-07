@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/vendors/organik-icon/organik-icons.css" />
-    <link rel="stylesheet" href="assets/css/organik.css?v=7" />
+    <link rel="stylesheet" href="assets/css/organik.css?v=8" />
 </head>
 
 <body class="home-page">
@@ -25,13 +25,8 @@
             <?php include 'html/cabecera_principal.html'; ?>
         </header>
 
-        <?php
-            $t = new template;
-            $t->SetTemplate('html/cabecera_menu_noletters.html');
-            $t->SetParameter('menu', 'Modelos');
-            $t->SetParameter('subtitle', 'Modelo de negocio y propuesta');
-            echo $t->Display();
-        ?>
+        <?php include 'html/cabecera_modelos.html'; ?>
+
 
         <section class="modelos-hero">
             <div class="modelos-hero__bg" style="background-image: url('assets/images/organizadas/modelocorregido.png');"></div>
