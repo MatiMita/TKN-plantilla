@@ -1413,6 +1413,9 @@ h6 {
   position: sticky;
   top: 0;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  background: #0d1723;
   transition: box-shadow 0.3s ease;
 }
 
@@ -8889,7 +8892,12 @@ body {
 
 .home-card p {
   color: rgba(19, 32, 45, 0.88);
-  text-align: left;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .home-hero__lead {
@@ -9144,17 +9152,13 @@ body {
   position: relative;
   min-height: 460px;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 0;
   background-image: linear-gradient(135deg, rgba(13, 23, 35, 0.94), rgba(37, 54, 76, 0.88));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: none;
 }
 
 .home-placeholder::after {
-  content: "";
-  position: absolute;
-  inset: 22px;
-  border-radius: 24px;
-  border: 1px dashed rgba(255, 255, 255, 0.22);
+  content: none;
 }
 
 .home-placeholder__label {
@@ -9687,12 +9691,31 @@ body {
 .about-hero {
   position: relative;
   overflow: hidden;
-  padding: 56px 0 40px;
+  padding: 106px 0 40px;
+  margin-top: -50px;
   background:
     linear-gradient(180deg, rgba(8, 17, 29, 0.82) 0%, rgba(15, 29, 45, 0.88) 100%),
     url('../../assets/images/organizadas/nosotros.jpg') center center / cover no-repeat;
   color: #fff;
 }
+
+/* Servicios hero: fondo e h1 propio */
+.servicios-hero {
+  background:
+    linear-gradient(180deg, rgba(8, 17, 29, 0.82) 0%, rgba(15, 29, 45, 0.90) 100%),
+    url('../../assets/images/organizadas/servicios.jpg') center center / cover no-repeat;
+}
+
+.servicios-hero .about-hero__copy h1 {
+  max-width: 18ch;
+}
+
+/* Contacto hero: sin imagen de fondo */
+.contacto-hero {
+  background:
+    linear-gradient(180deg, rgba(8, 17, 29, 0.82) 0%, rgba(15, 29, 45, 0.90) 100%);
+}
+
 
 .about-hero::before {
   content: "";
@@ -9729,14 +9752,19 @@ body {
   font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
+  text-align: justify;
 }
 
 .about-hero__copy h1 {
-  max-width: 12ch;
-  font-size: clamp(3rem, 6vw, 5.4rem);
-  line-height: 0.98;
-  text-transform: uppercase;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-transform: none;
   color: #ffffff;
+  text-align: left;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.32);
 }
 
 .about-hero__copy h3 {
@@ -9744,7 +9772,12 @@ body {
   color: #f0b13a;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   font-weight: 700;
-  max-width: 18ch;
+  max-width: 28ch;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .about-hero__copy p {
@@ -9823,6 +9856,15 @@ body {
 .about-sectors-panel strong {
   color: rgba(17, 28, 44, 0.8);
   line-height: 1.7;
+}
+
+.about-pillars__card p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .about-choice__content li,
@@ -10319,11 +10361,15 @@ body {
 }
 
 .organization-hero__copy h1 {
-  max-width: 12ch;
-  font-size: clamp(2.5rem, 5vw, 4.6rem);
-  line-height: 0.98;
-  text-transform: uppercase;
+  max-width: 560px;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-transform: none;
   color: #ffffff;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.32);
 }
 
 .organization-hero__copy p {
@@ -10331,6 +10377,11 @@ body {
   margin: 18px 0 0;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .organization-hero__scene {
@@ -10847,6 +10898,7 @@ body {
 
 body {
   overflow-x: clip;
+  background-color: #fff;
 }
 
 .main-header,
@@ -10856,6 +10908,7 @@ body {
   position: sticky !important;
   top: 0 !important;
   z-index: 9999 !important;
+  background: transparent !important;
 }
 
 /* Fallback con is-scrolled por JS */
@@ -10863,9 +10916,8 @@ body {
   position: fixed !important;
   width: 100%;
   left: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background: #ffffff;
-  /* Asegura que no sea transparente al bajar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background: #0d1723 !important;
 }
 
 /* ─────────────────────────────────────────────────────────────

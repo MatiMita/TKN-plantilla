@@ -17,9 +17,7 @@ class contactos
 	function mostrarCabeceraMenuSinLetras()
 	{
 		$template = new template;
-		$template->SetTemplate('html/cabecera_menu_noletters.html');
-		$template->SetParameter('menu', "Contactenos");
-		$template->SetParameter('subtitle', "Ponte en contacto con nosotros");
+		$template->SetTemplate('html/cabecera_contacto.html');
 		return $template->Display();
 	}
 	function mostrarCabeceraPrincipal()

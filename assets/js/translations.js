@@ -97,6 +97,12 @@ const translations = {
         'contact_h2': 'Estamos listos para estructurar una solución a medida.',
         'contact_p': 'Si el proyecto requiere mirada técnica, coordinación y seguimiento ejecutivo, podemos empezar por una conversación concreta.',
         'contact_loc1': 'La Paz y Cochabamba',
+
+        // ── Cabecera Contacto (hero) ──────────────────────────
+        'contacto_hero_kicker': 'CONTACTO',
+        'contacto_hero_h1': 'Hablemos de su próximo proyecto',
+        'contacto_hero_h3': 'Estamos listos para estructurar una solución a medida.',
+        'contacto_hero_p': 'Si el proyecto requiere mirada técnica, coordinación y seguimiento ejecutivo, podemos empezar por una conversación concreta.',
         'form_nombre': 'Nombre',
         'form_correo': 'Correo electrónico',
         'form_asunto': 'Asunto',
@@ -196,6 +202,12 @@ const translations = {
         'somos_stat2': 'EXPERIENCIA COMPROBADA',
         'somos_stat3': 'VISIÓN GLOBAL Y ENFOQUE LOCAL',
         'somos_stat4': 'COMPROMETIDOS CON RESULTADOS',
+
+        // ── Cabecera Servicios (hero) ────────────────────────
+        'servicios_hero_kicker': 'SERVICIOS',
+        'servicios_hero_h1': 'Soluciones que impulsan decisiones y resultados',
+        'servicios_hero_h3': 'Consultoría, ingeniería, gestión de proyectos e inversiones estratégicas.',
+        'servicios_hero_p': 'TKN S.R.L. ofrece un portafolio integral de servicios diseñados para acompañar a empresas e inversionistas en cada etapa del ciclo de vida de sus proyectos, con rigor técnico y visión estratégica.',
 
         // ── Cabecera Somos (hero) ─────────────────────────────
         'somos_hero_kicker': 'NOSOTROS',
@@ -360,6 +372,12 @@ const translations = {
 
         // ── Contact (homepage) ────────────────────────────────
         'contact_kicker': "Let's talk about your next project",
+
+        // ── Contact hero ───────────────────────────────────
+        'contacto_hero_kicker': 'CONTACT',
+        'contacto_hero_h1': "Let's talk about your next project",
+        'contacto_hero_h3': 'We are ready to structure a tailored solution.',
+        'contacto_hero_p': 'If the project requires technical insight, coordination and executive follow-up, we can start with a concrete conversation.',
         'contact_h2': 'We are ready to structure a tailored solution.',
         'contact_p': 'If the project requires technical insight, coordination and executive follow-up, we can start with a concrete conversation.',
         'contact_loc1': 'La Paz and Cochabamba',
@@ -462,6 +480,12 @@ const translations = {
         'somos_stat2': 'PROVEN EXPERIENCE',
         'somos_stat3': 'GLOBAL VISION AND LOCAL FOCUS',
         'somos_stat4': 'COMMITTED TO RESULTS',
+
+        // ── Services hero ─────────────────────────────────────
+        'servicios_hero_kicker': 'SERVICES',
+        'servicios_hero_h1': 'Solutions that drive decisions and results',
+        'servicios_hero_h3': 'Consulting, engineering, project management and strategic investments.',
+        'servicios_hero_p': 'TKN S.R.L. offers a comprehensive portfolio of services designed to accompany companies and investors at every stage of their project lifecycle, with technical rigor and strategic vision.',
 
         // ── Somos hero ────────────────────────────────────────
         'somos_hero_kicker': 'ABOUT US',
