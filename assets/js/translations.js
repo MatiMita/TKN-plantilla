@@ -37,8 +37,10 @@ const translations = {
         'about_p': 'TKN S.R.L. es una empresa enfocada en integrar estrategia, operación y ejecución para proyectos de alto impacto. Nuestra visión combina experiencia técnica con una lectura clara del negocio para convertir retos complejos en resultados sostenibles.',
         'about_pillar1_title': 'Profesionales',
         'about_pillar1_desc': 'Capacidades especializadas para cada etapa del proyecto.',
+        'about_pillar1_title_inline': 'Profesionales — Capacidades especializadas para cada etapa del proyecto.',
         'about_pillar2_title': 'Soluciones',
         'about_pillar2_desc': 'Eficiencia operativa con foco en valor y continuidad.',
+        'about_pillar2_title_inline': 'Soluciones — Eficiencia operativa con foco en valor y continuidad.',
         'about_cta': 'Conozca más sobre TKN',
 
         // ── Servicios ────────────────────────────────────────
@@ -115,12 +117,12 @@ const translations = {
         'escribenos': 'Escríbenos',
         'enlaces': 'Enlaces',
         'footer_escribenos_desc': 'Si tienes dudas o quieres más información, contáctanos.',
-        'footer_contactar': 'Contactar',
+        'footer_contactar': 'Contactar <i class="fa fa-arrow-right"></i>',
         'calle_principal': 'AV PANDO, EDIFICIO VIEW',
 
         // ── Quienes Somos (somos.html) ────────────────────────
         'somos_historia_kicker': 'NUESTRA HISTORIA',
-        'somos_historia_h2': 'El significado de',
+        'somos_historia_h2': 'El significado de <span>TIAN KALLPA NINA</span>',
         'somos_historia_p1': 'TKN nace de un concepto inspirado en la fuerza transformadora del fuego, símbolo universal de energía, renovación, liderazgo y desarrollo.',
         'somos_historia_p2': 'Desde su creación, la empresa fue concebida con la visión de impulsar proyectos que contribuyan al crecimiento económico y empresarial, integrando conocimiento, innovación y experiencia para brindar soluciones de alto valor.',
         'somos_historia_p3': 'El fuego representa la capacidad de transformar, crear y evolucionar, principios que forman parte de nuestra identidad y que inspiran cada proyecto que desarrollamos.',
@@ -315,8 +317,10 @@ const translations = {
         'about_p': 'TKN S.R.L. is a company focused on integrating strategy, operations and execution for high-impact projects. Our vision combines technical expertise with a clear business understanding to turn complex challenges into sustainable results.',
         'about_pillar1_title': 'Professionals',
         'about_pillar1_desc': 'Specialized capabilities for every stage of the project.',
+        'about_pillar1_title_inline': 'Professionals — Specialized capabilities for every stage of the project.',
         'about_pillar2_title': 'Solutions',
         'about_pillar2_desc': 'Operational efficiency focused on value and continuity.',
+        'about_pillar2_title_inline': 'Solutions — Operational efficiency focused on value and continuity.',
         'about_cta': 'Learn more about TKN',
 
         // ── Services ──────────────────────────────────────────
@@ -393,12 +397,12 @@ const translations = {
         'escribenos': 'Write to us',
         'enlaces': 'Links',
         'footer_escribenos_desc': 'If you have questions or want more information, contact us.',
-        'footer_contactar': 'Contact',
+        'footer_contactar': 'Contact <i class="fa fa-arrow-right"></i>',
         'calle_principal': 'AV PANDO, VIEW BUILDING',
 
         // ── About Us / Somos ─────────────────────────────────
         'somos_historia_kicker': 'OUR HISTORY',
-        'somos_historia_h2': 'The meaning of',
+        'somos_historia_h2': 'The meaning of <span>TIAN KALLPA NINA</span>',
         'somos_historia_p1': 'TKN is born from a concept inspired by the transforming force of fire, a universal symbol of energy, renewal, leadership and development.',
         'somos_historia_p2': 'Since its founding, the company was conceived with the vision of driving projects that contribute to economic and business growth, integrating knowledge, innovation and experience to deliver high-value solutions.',
         'somos_historia_p3': 'Fire represents the capacity to transform, create and evolve — principles that form part of our identity and inspire every project we develop.',

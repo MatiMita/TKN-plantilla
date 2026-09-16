@@ -56,8 +56,8 @@
             </div>
             <div class="mobile-nav__container"></div>
             <ul class="mobile-nav__contact list-unstyled">
-                <li><i class="organik-icon-email"></i><a href="mailto:gustavo.dick@tkn-global.com">gustavo.dick@tkn-global.com</a></li>
-                <li><i class="organik-icon-calling"></i><a href="tel:+59144596621">+591 4 4596621</a></li>
+                <li><i class="organik-icon-email"></i><a href="mailto:adm.office@tkn-global.com">adm.office@tkn-global.com</a></li>
+                <li><i class="organik-icon-calling"></i><a href="tel:+59176902047">+591 76902047</a></li>
             </ul>
             <div class="mobile-nav__top">
                 <div class="lang-switcher lang-switcher--mobile" aria-label="Selector de idioma" style="justify-content:center; margin: 12px auto; width: fit-content;">
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <a href="https://wa.me/59144596621" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <a href="https://wa.me/59176902047" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>

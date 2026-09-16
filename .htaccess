@@ -1,6 +1,16 @@
 # Apache Server Configs v3.1.0 | MIT License
 # https://github.com/h5bp/server-configs-apache
 
+# ----------------------------------------------------------------------
+# | SVG MIME Type                                                       |
+# ----------------------------------------------------------------------
+
+<IfModule mod_mime.c>
+    AddType image/svg+xml                       svg svgz
+    AddEncoding gzip                            svgz
+</IfModule>
+
+
 # (!) Using `.htaccess` files slows down Apache, therefore, if you have
 # access to the main server configuration file (which is usually called
 # `httpd.conf`), you should add this logic there.

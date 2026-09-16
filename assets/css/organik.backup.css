@@ -8849,7 +8849,7 @@ body {
   margin: 0 0 14px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   color: #d6a13a;
 }
@@ -8954,8 +8954,8 @@ body {
 .home-method__box,
 .home-contact__form {
   border-radius: 22px;
-  background: #ffffff;
-  box-shadow: 0 4px 24px rgba(14, 23, 35, 0.07);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 22px 60px rgba(14, 23, 35, 0.08);
 }
 
 .home-hero__chips span {
@@ -9099,7 +9099,7 @@ body {
 .home-stat__value,
 .home-card__icon {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   color: #d6a13a;
 }
@@ -9109,12 +9109,10 @@ body {
   display: block;
   margin-top: 8px;
   font-weight: 700;
-  font-size: 1.05rem;
 }
 
 .home-stats {
-  padding: 0 0 36px;
-  background: #ffffff;
+  padding: 0 0 28px;
 }
 
 .home-hero--fullbg + .home-stats {
@@ -9136,8 +9134,7 @@ body {
 }
 
 .home-stat {
-  text-align: center;
-  margin: 6px 4px;
+  text-align: left;
 }
 
 .home-stat p,
@@ -9191,10 +9188,6 @@ body {
   color: #13202d;
 }
 
-.home-project__body h3 {
-  text-align: center;
-}
-
 .home-section-heading {
   max-width: 760px;
   margin-bottom: 28px;
@@ -9206,13 +9199,7 @@ body {
 
 .home-card {
   min-height: 220px;
-  border: 1px solid rgba(19, 32, 45, 0.07);
-  margin: 6px 4px;
-}
-
-.home-card h3 {
-  text-align: center;
-  font-size: 1.25rem;
+  border: 1px solid rgba(19, 32, 45, 0.08);
 }
 
 .home-card__icon {
@@ -9762,7 +9749,7 @@ body {
   margin: 0 0 14px;
   color: #f0b13a;
   letter-spacing: 0.22em;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: justify;
@@ -10041,7 +10028,6 @@ body {
 .about-method-step strong {
   margin: 0;
   color: #0d1723;
-  text-align: center;
 }
 
 .about-pillars__grid {
@@ -10054,7 +10040,6 @@ body {
   padding: 24px;
   background: linear-gradient(180deg, #0d1723 0%, #111f31 100%);
   color: #fff;
-  text-align: center;
 }
 
 .about-pillars__card p,
@@ -10086,25 +10071,7 @@ body {
 .about-value-card span {
   display: inline-flex;
   margin-bottom: 10px;
-  font-size: 3rem;
-}
-
-.about-value-icon--gold {
-  color: #C9A84C;
-  filter: drop-shadow(0 2px 6px rgba(201, 168, 76, 0.45));
-}
-
-.about-value-svg-icon {
-  width: 3rem;
-  height: 3rem;
-  filter: drop-shadow(0 2px 6px rgba(201, 168, 76, 0.45));
-}
-
-.about-value-spacer {
-  /* Celda invisible para centrar la fila inferior de 3 tarjetas en grid de 4 columnas */
-  background: transparent;
-  box-shadow: none;
-  pointer-events: none;
+  font-size: 2rem;
 }
 
 .about-method-grid,
@@ -10137,13 +10104,18 @@ body {
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
-  text-align: center;
 }
 
 .about-method-step span {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
   align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f0b13a;
+  color: #0d1723;
+  font-size: 1.4rem;
   margin-bottom: 12px;
 }
 
@@ -10383,10 +10355,9 @@ body {
   margin: 0 0 12px;
   color: #f0b13a;
   letter-spacing: 0.22em;
-  font-size: 19px;
+  font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .organization-hero__copy h1 {
@@ -10417,7 +10388,9 @@ body {
   position: relative;
   min-height: 250px;
   border-radius: 28px;
-  background: url('assets/images/organizadas/reunionlaboral.jpg');
+  background:
+    linear-gradient(180deg, rgba(10, 17, 27, 0.2), rgba(10, 17, 27, 0.55)),
+    url('assets/images/organizadas/reunionlaboral.jpg');
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
@@ -10432,7 +10405,10 @@ body {
 }
 
 .organization-hero__glow {
-  display: none;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 177, 42, 0.8);
+  box-shadow: 0 0 0 8px rgba(255, 177, 42, 0.08);
 }
 
 .organization-hero__glow--left {
@@ -10522,10 +10498,8 @@ body {
 
 .organization-section__head {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  align-items: end;
   gap: 16px;
   margin-bottom: 18px;
 }
@@ -10760,11 +10734,8 @@ body {
 }
 
 .organization-bottom-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
   margin-top: 18px;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .organization-bottom-card,
@@ -10774,9 +10745,7 @@ body {
   background: #fff;
   border-radius: 24px;
   box-shadow: 0 18px 48px rgba(7, 15, 24, 0.08);
-  text-align: center;
 }
-
 
 .organization-levels {
   display: grid;
